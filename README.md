@@ -25,7 +25,7 @@ Install to testdisk and run:
 * Postmark
 * Dbench 12 clients
 
-## testing SSD performance while full
+## Testing SSD performance while full
 
 After dumping your results, entirely fill the test disk with data.
 Reformat -- NOT a low level format -- and re-run tests.
