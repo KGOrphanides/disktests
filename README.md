@@ -7,7 +7,7 @@ A full version of the desk test kit, including the media and data files required
 To create a 1GB file for use in the large file transfer test:
 fallocate -l 1G large.img
 
-Testing procotol:
+## OG testing procotol:
 
 * Format review disk ext4
 * Create mountpoints: sudo mkdir {/mnt/ramdisk/, r /mnt/testdisk/}
@@ -18,5 +18,14 @@ Testing procotol:
 * Run the test file ./storagetest
 * Copy the times from results.txt into the Test Results sheet of hard_disk_test_results.ods to calculate read/write speeds in MB/s 
 
+## Phoronix benchmark selection
 
+Install to testdisk and run:
+* Aio-stress
+* Postmark
+* Dbench 12 clients
 
+## testing SSD performance while full
+
+After dumping your results, entirely fill the test disk with data.
+Reformat -- NOT a low level format -- and re-run tests.
