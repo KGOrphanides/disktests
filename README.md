@@ -9,10 +9,14 @@ fallocate -l 1G large.img
 
 Testing procotol:
 
-1. Format review disk ext4
-2. Mount review disk at /mnt/testdisk - for example: sudo mount /dev/nvme0n1 /mnt/testdisk
-3. Create and mount a 4GB ramdisk: sudo mount -t tmpfs -o size=4g tmpfs /mnt/ramdisk
-4. Copy all disktests to the ramdisk's root
-5. cd to the ramdisk: cd /mnt/ramdisk/disktests
-6. Run the test file ./storagetest
-7. Copy the times from results.txt into test spreadsheet and divide by three for average transfer speed in seconds
+* Format review disk ext4
+* Create mountpoints: sudo mkdir {/mnt/ramdisk/, r /mnt/testdisk/}
+* Mount review disk at /mnt/testdisk - for example: sudo mount /dev/nvme0n1 /mnt/testdisk
+* Create and mount a 4GB ramdisk: sudo mount -t tmpfs -o size=4g tmpfs /mnt/ramdisk
+* Copy all disktests to the ramdisk's root
+* cd to the ramdisk: cd /mnt/ramdisk
+* Run the test file ./storagetest
+* Copy the times from results.txt into the Test Results sheet of hard_disk_test_results.ods to calculate read/write speeds in MB/s 
+
+
+
