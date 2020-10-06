@@ -21,6 +21,8 @@ fallocate -l 1G large.img
 
 ## Phoronix benchmark selection
 
+https://phoronix-test-suite.com/?k=downloads
+
 Install to testdisk and run:
 * Aio-stress
 * Postmark
